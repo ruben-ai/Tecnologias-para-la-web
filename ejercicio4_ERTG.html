@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio4 - Formularios</title>
+</head>
+<body>
+	<header>
+		
+	</header>
+
+	<main>
+		<form align="center" action="registro.php" method="POST">
+			<table align="center">
+				<tr>
+					<td><label for="universidad" >Universidad: </label></td>
+					<td><input type="text" name="universidad" id="universidad"><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label>Escuela: </label></td>
+					<td><input type="text" name="escuela" id="escuela"><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label>Rama: </label></td>
+					<td><select name="rama" id="rama">
+				<option value="1">Fisico-Matematico</option>
+				<option value="2">Quimico-Biologico</option>
+				<option value="3">Ciencias Sociales</option>
+			</select><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="grado">Grado: </label></td>
+					<td><select name="grado" id="grado">
+				<option value="1">Licenciatura</option>
+				<option value="2">Maestria</option>
+				<option value="3">Doctorado</option>
+				<option value="4">Nivel Medio Superior</option>
+				<option value="5">Especialidad</option>
+			</select>
+			<label>
+			<input type="radio" name="seleccion" value="1" checked>Incompleto
+			</label>
+			<label>
+			<input type="radio" name="seleccion" value="2">Completado
+			</label><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="Promedio">Promedio CPI: </label></td>
+					<td><label><input type="number" name="promedio" id="promedio" min="1" max="10">General</label></td>
+				    <td><label><input type="number" name="semestre" id="semestre" min="1" max="10">Semestre</label><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="Experiencia">Experiencia: </label></td>
+					<td><label><input type="number" name="experiencia" id="experiencia" min="1" max="100">Anos</label><br><br></td>
+			    </tr>
+
+				<tr>
+					<td><label for="Pagina">Pagina Web: </label></td>
+					<td><input type="url" name="sitiowe" id="sitioweb" value="http:\\"><br><br></td>
+				</tr>
+
+				<tr>
+					<td><input type="submit" name="Envio" value="Registrarse"></td>
+					<td><input type="reset" name="reseteo" value="Limpiar Campos"></td>
+					<td><input type="button" name="botonsito" value="Boton Generico"><br><br></td>
+				</tr>
+			</table>
+
+			</form>
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>
